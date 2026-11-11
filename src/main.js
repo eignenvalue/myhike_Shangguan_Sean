@@ -107,7 +107,7 @@ async function displayHikesDynamically(){
      const thisHike = doc.data()
     //populate data in the template
      newcard.querySelector(".card-title").textContent = thisHike.name;
-     newcard.querySelector('.card-text').textContent = thisHike.details || `Located in ${hike.city}.`;
+     newcard.querySelector('.card-text').textContent = thisHike.details || `Located in ${thisHike.city}.`;
      newcard.querySelector('.card-length').textContent = thisHike.length;
      newcard.querySelector('.card-image').src = `./images/${thisHike.code}.jpg`;
         // Add the link with the document ID
